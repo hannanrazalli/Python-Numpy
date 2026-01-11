@@ -114,3 +114,28 @@ arr = np.array([1, 0, 3])
 newarr = arr.astype(bool) *Converts to boolean*
 print(newarr)
 print(newarr.dtype)
+
+
+# Copy & View array
+arr = np.array([1, 2, 3, 4, 5])
+x = arr.copy() *Copy array*
+arr[0] = 42
+print(arr)
+print(x)
+
+
+arr = np.array([1, 2, 3, 4, 5])
+x = arr.view() *View array*
+arr[0] = 42
+print(arr)
+print(x)
+
+
+arr = np.array([1, 2, 3, 4, 5])
+x = arr.copy()
+y = arr.view()
+print(x.base) *None*
+print(y.base) *[1 2 3 4 5]*
+*Check if array owns its data*
+
+
