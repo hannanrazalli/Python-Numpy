@@ -47,3 +47,32 @@ print(a[1,0,2]) *How to access 3-D element*
 
 arr = np.array([[1,2,3,4,5], [6,7,8,9,10]])
 print('Last element from 2nd dim: ', arr[1, -1]) *Negative indexing*
+
+# Slicing arrays
+arr = np.array([1, 2, 3, 4, 5, 6, 7])
+print(arr[1:5]) *Implicit slicing*
+
+arr = np.array([1, 2, 3, 4, 5, 6, 7])
+print(arr[4:]) *End slicing*
+
+arr = np.array([1, 2, 3, 4, 5, 6, 7])
+print(arr[:4]) *Front slicing*
+
+arr = np.array([1, 2, 3, 4, 5, 6, 7])
+print(arr[-3:-1]) *Negative slicing*
+
+arr = np.array([1, 2, 3, 4, 5, 6, 7])
+print(arr[1:5:2]) *Step slicing*
+
+arr = np.array([1, 2, 3, 4, 5, 6, 7])
+print(arr[::2]) *Return all with step 2*
+
+arr = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])
+print(arr[1, 1:4]) *2-D aray: Slice 2nd element*
+
+arr = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])
+print(arr[0:2, 2]) *2-D array: Slice both elements, return index 2*
+
+arr = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])
+print(arr[0:2, 1:4]) *Slice 2-D array, return 2-D array*
+
