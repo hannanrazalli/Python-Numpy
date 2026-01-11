@@ -76,3 +76,41 @@ print(arr[0:2, 2]) *2-D array: Slice both elements, return index 2*
 arr = np.array([[1, 2, 3, 4, 5], [6, 7, 8, 9, 10]])
 print(arr[0:2, 1:4]) *Slice 2-D array, return 2-D array*
 
+
+# Numpy Data Type
+i - integer
+b - boolean
+u - unsigned integer
+f - float
+c - complex float
+m - timedelta
+M - datetime
+O - object
+S - string
+U - unicode string
+V - fixed chunk of memory for other type ( void )
+
+arr = np.array([1, 2, 3, 4])
+print(arr.dtype) *Print data type*
+
+arr = np.array([1, 2, 3, 4], dtype='S') *Set data type of String*
+print(arr)
+print(arr.dtype)
+
+result:
+[b'1' b'2' b'3' b'4'] *b means byte*
+|S1
+
+arr = np.array([1.1, 2.1, 3.1])
+newarr = arr.astype('i') *Convert to integer*
+print(newarr)
+print(newarr.dtype)
+
+RESULT:
+[1 2 3]
+int32
+
+arr = np.array([1, 0, 3])
+newarr = arr.astype(bool) *Converts to boolean*
+print(newarr)
+print(newarr.dtype)
