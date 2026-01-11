@@ -28,3 +28,22 @@ a = np.array([1,2,3,4], ndmin=5)
 
 print(a)
 print('Number of dimensions:', a.ndim)
+
+# Array indexing
+arr = np.array([1, 2, 3, 4])
+print(arr[0])
+
+arr = np.array([1, 2, 3, 4])
+print(arr[2] + arr[3]) *Maths in array*
+
+arr = np.array([[1,2,3,4,5], [6,7,8,9,10]])
+print('2nd element on 1st row: ', arr[0, 1])
+
+a = np.array([[1,2,3,4],[5,6,7,8]])
+print(a[0,1]) *How to access 2-D element*
+
+a = np.array([[[1,2,3],[4,5,6]],[[7,8,9],[10,11,12]]])
+print(a[1,0,2]) *How to access 3-D element*
+
+arr = np.array([[1,2,3,4,5], [6,7,8,9,10]])
+print('Last element from 2nd dim: ', arr[1, -1]) *Negative indexing*
