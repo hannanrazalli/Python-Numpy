@@ -138,4 +138,28 @@ print(x.base) *None*
 print(y.base) *[1 2 3 4 5]*
 *Check if array owns its data*
 
+# Reshaping arrays: 1-D to 2-D
+arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
+newarr = arr.reshape(4, 3) *4 rows, 3 columns*
+print(newarr)
+
+# Reshaping arrays: 1-D to 3-D
+arr = np.array([1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12])
+newarr = arr.reshape(2, 3, 2)
+*2 dimensions, 3 rows, 2 columns*
+print(newarr)
+
+arr = np.array([1, 2, 3, 4, 5, 6, 7, 8])
+print(arr.reshape(2, 4).base)
+*If returns original array, means it is a view*
+
+arr = np.array([1, 2, 3, 4, 5, 6, 7, 8])
+newarr = arr.reshape(2, 2, -1)
+*Reshape to 2 dimensions, 2 rows and automatic columns based on balance*
+print(newarr)
+
+arr = np.array([[1, 2, 3], [4, 5, 6]])
+newarr = arr.reshape(-1)
+*Flatten 2-D array to 1-D array*
+print(newarr)
 
